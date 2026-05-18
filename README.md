@@ -1,0 +1,110 @@
+Zepto Inventory Optimization \& Analytics (SQL)
+
+
+
+📌 Project Overview
+
+Efficient inventory management and stock optimization are critical to the success of quick-commerce platforms. This project focuses on analyzing an e-commerce inventory dataset simulating Zepto's operational dynamics. Using advanced PostgreSQL queries, the analysis extracts actionable business insights regarding stock health, revenue leakages, pricing strategies, and portfolio segmentation.
+
+
+
+The goal of this analysis is to transform raw inventory data into strategic decisions that balance consumer demand with operational efficiency.
+
+
+
+
+
+
+
+🛠️ Tech Stack \& Concepts Used
+
+&#x20;   Database Management System:\*\* PostgreSQL / pgAdmin 4
+
+&#x20;   SQL Concepts Applied:
+
+&#x20;                        Advanced Aggregations \& Filters
+
+&#x20;                        Common Table Expressions (CTEs)
+
+&#x20;                        Window Functions (Ranking and Partitioning)
+
+&#x20;                        Conditional Logic (`CASE WHEN` statements)
+
+&#x20;                        String \& Data Type Manipulations (Unit conversions)
+
+
+
+
+
+
+
+📊 Business Questions Addressed
+
+
+
+1\. Pricing \& Value Optimization
+
+Q1. Top 10 Best-Value Products: Identified the top 10 products offering the highest consumer value based on maximum discount percentages.
+
+
+
+Q4. High MRP / Low Discount Auditing: Isolated high-ticket items (MRP > ₹500) paired with low discount incentives (< 10%) to evaluate competitive pricing strategies.
+
+
+
+Q6. Unit Economics (Price per Gram): Standardized product weights to calculate price-per-gram for items above 100g, sorting them by best-value efficiency to find high-margin vs. consumer-friendly products.
+
+
+
+2\. Inventory Health \& Revenue Leakage
+
+Q2. Revenue Bottlenecks: Discovered high-value (High MRP) items that are currently \*\*Out of Stock\*\*, pinpointing immediate revenue leakage and supply chain gaps.
+
+
+
+Q3. Estimated Revenue per Category: Calculated forecasted revenue metrics across different product categories to determine which segments drive the most financial value.
+
+
+
+Q8. Logistics \& Storage Load: Calculated the total cumulative inventory weight per category to help warehouse operations optimize physical shelf-space allocation.
+
+
+
+3\. Strategic Product Segmentation
+
+Q5. Top 5 High-Discount Categories: Identified the top 5 product categories offering the highest average discount percentages to understand cross-subsidization strategies.
+
+
+
+Q7. Velocity \& Volume Tiers: Engineered a categorization framework to dynamically group inventory into operational tiers (Low, Medium, Bulk) for targeted marketing and stock clearing.
+
+
+
+
+
+
+
+📈 Key Business Takeaways
+
+Stockout Minimization: Prioritizing restocking schedules for the high-MRP items identified in the out-of-stock audit will directly recover trapped revenue.
+
+
+
+Data-Driven Storage Allocation: Heavy-weight categories identified in the total weight analysis can be relocated to optimal warehouse zones to streamline pick-and-pack times.
+
+
+
+Margin Guardrails: Segmenting items into Low, Medium, and Bulk tiers allows marketing teams to apply aggressive discounts on high-volume products while protecting margins on high-value niche items.
+
+
+
+
+
+
+
+🚀 How to Use This Repository
+
+1\. `zepto\_inventory\_analysis.sql`: Contains the full database queries corresponding to questions 1 through 8.
+
+2\. To replicate the analysis, clone this repository, import your dataset into pgAdmin, and run the structured queries.
+
