@@ -22,15 +22,15 @@ The goal of this analysis is to transform raw inventory data into strategic deci
 
 &#x20;   SQL Concepts Applied:
 
-&#x20;                        Advanced Aggregations \& Filters
+&#x20; ---------                        Advanced Aggregations \& Filters
 
-&#x20;                        Common Table Expressions (CTEs)
+&#x20; ---------                        Common Table Expressions (CTEs)
 
-&#x20;                        Window Functions (Ranking and Partitioning)
+&#x20; ---------                        Window Functions (Ranking and Partitioning)
 
-&#x20;                        Conditional Logic (`CASE WHEN` statements)
+&#x20; ---------                        Conditional Logic (`CASE WHEN` statements)
 
-&#x20;                        String \& Data Type Manipulations (Unit conversions)
+&#x20; ---------                        String \& Data Type Manipulations (Unit conversions)
 
 
 
@@ -44,39 +44,39 @@ The goal of this analysis is to transform raw inventory data into strategic deci
 
 1\. Pricing \& Value Optimization
 
-Q1. Top 10 Best-Value Products: Identified the top 10 products offering the highest consumer value based on maximum discount percentages.
+--------- Q1. Top 10 Best-Value Products: Identified the top 10 products offering the highest consumer value based on maximum discount percentages.
 
 
 
-Q4. High MRP / Low Discount Auditing: Isolated high-ticket items (MRP > ₹500) paired with low discount incentives (< 10%) to evaluate competitive pricing strategies.
+--------- Q4. High MRP / Low Discount Auditing: Isolated high-ticket items (MRP > ₹500) paired with low discount incentives (< 10%) to evaluate competitive pricing strategies.
 
 
 
-Q6. Unit Economics (Price per Gram): Standardized product weights to calculate price-per-gram for items above 100g, sorting them by best-value efficiency to find high-margin vs. consumer-friendly products.
+--------- Q6. Unit Economics (Price per Gram): Standardized product weights to calculate price-per-gram for items above 100g, sorting them by best-value efficiency to find high-margin vs. consumer-friendly products.
 
 
 
 2\. Inventory Health \& Revenue Leakage
 
-Q2. Revenue Bottlenecks: Discovered high-value (High MRP) items that are currently \*\*Out of Stock\*\*, pinpointing immediate revenue leakage and supply chain gaps.
+--------- Q2. Revenue Bottlenecks: Discovered high-value (High MRP) items that are currently \*\*Out of Stock\*\*, pinpointing immediate revenue leakage and supply chain gaps.
 
 
 
-Q3. Estimated Revenue per Category: Calculated forecasted revenue metrics across different product categories to determine which segments drive the most financial value.
+--------- Q3. Estimated Revenue per Category: Calculated forecasted revenue metrics across different product categories to determine which segments drive the most financial value.
 
 
 
-Q8. Logistics \& Storage Load: Calculated the total cumulative inventory weight per category to help warehouse operations optimize physical shelf-space allocation.
+--------- Q8. Logistics \& Storage Load: Calculated the total cumulative inventory weight per category to help warehouse operations optimize physical shelf-space allocation.
 
 
 
 3\. Strategic Product Segmentation
 
-Q5. Top 5 High-Discount Categories: Identified the top 5 product categories offering the highest average discount percentages to understand cross-subsidization strategies.
+--------- Q5. Top 5 High-Discount Categories: Identified the top 5 product categories offering the highest average discount percentages to understand cross-subsidization strategies.
 
 
 
-Q7. Velocity \& Volume Tiers: Engineered a categorization framework to dynamically group inventory into operational tiers (Low, Medium, Bulk) for targeted marketing and stock clearing.
+--------- Q7. Velocity \& Volume Tiers: Engineered a categorization framework to dynamically group inventory into operational tiers (Low, Medium, Bulk) for targeted marketing and stock clearing.
 
 
 
