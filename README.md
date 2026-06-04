@@ -45,7 +45,11 @@ The goal of this analysis is to transform raw inventory data into strategic deci
 1\. Pricing \& Value Optimization
 
 --------- Q1. Top 10 Best-Value Products: Identified the top 10 products offering the highest consumer value based on maximum discount percentages.
-
+```sql
+SELECT Distinct name, mrp, discountPercent From zepto
+Order By discountPercent DESC
+limit 10;
+```
 
 
 --------- Q4. High MRP / Low Discount Auditing: Isolated high-ticket items (MRP > ₹500) paired with low discount incentives (< 10%) to evaluate competitive pricing strategies.
@@ -59,6 +63,12 @@ The goal of this analysis is to transform raw inventory data into strategic deci
 2\. Inventory Health \& Revenue Leakage
 
 --------- Q2. Revenue Bottlenecks: Discovered high-value (High MRP) items that are currently \*\*Out of Stock\*\*, pinpointing immediate revenue leakage and supply chain gaps.
+```sql
+SELECT DISTINCT name, mrp
+From zepto
+WHERE outOfStock = TRUE and mrp > 300
+ORDER By mrp DESC;
+```
 
 
 
