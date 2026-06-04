@@ -79,7 +79,7 @@ SELECT Distinct name, mrp, discountPercent From zepto
 Order By discountPercent DESC
 limit 10;
 
---Q2. What are the Products with High MRP but Out of Stock
+--Q2. What are the Products with High MRP but Out of Stock. Mrp is more than 300.
 SELECT DISTINCT name, mrp
 From zepto
 WHERE outOfStock = TRUE and mrp > 300
