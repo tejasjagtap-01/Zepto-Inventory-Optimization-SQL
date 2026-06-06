@@ -53,11 +53,22 @@ limit 10;
 
 
 --------- Q4. High MRP / Low Discount Auditing: Isolated high-ticket items (MRP > ₹500) paired with low discount incentives (< 10%) to evaluate competitive pricing strategies.
-
+```sql
+SELECT DISTINCT name, mrp, discountPercent
+FROM zepto
+WHERE mrp > 500 AND discountPercent < 10
+ORDER BY mrp DESC, discountPercent DESC;
+```
 
 
 --------- Q6. Unit Economics (Price per Gram): Standardized product weights to calculate price-per-gram for items above 100g, sorting them by best-value efficiency to find high-margin vs. consumer-friendly products.
-
+```sql
+SELECT Distinct name, weightInGms, discountedSellingPrice,
+ROUND(discountedSellingPrice / weightInGms,2) AS price_per_gram
+FROM zepto
+WHERE weightInGms >= 100
+ORDER BY price_per_gram DESC;
+```
 
 
 2\. Inventory Health \& Revenue Leakage
