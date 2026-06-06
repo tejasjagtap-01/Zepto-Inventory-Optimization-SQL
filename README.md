@@ -120,7 +120,14 @@ limit 5;
 
 
 --------- Q7. Velocity \& Volume Tiers: Engineered a categorization framework to dynamically group inventory into operational tiers (Low, Medium, Bulk) for targeted marketing and stock clearing.
-
+```sql
+SELECT DISTINCT name, weightInGms,
+CASE WHEN weightInGms < 1000 THEN 'LOW'
+     WHEN weightInGms < 5000 THEN 'MEDIUM'
+	 ELSE 'BULK'
+	 END AS weight_category
+FROM zepto;
+```
 
 
 
