@@ -108,6 +108,14 @@ ORDER BY total_weight;
 3\. Strategic Product Segmentation
 
 --------- Q5. Top 5 High-Discount Categories: Identified the top 5 product categories offering the highest average discount percentages to understand cross-subsidization strategies.
+```sql
+SELECT category,
+round(AVG(discountPercent),2) AS avg_discount
+FROM zepto 
+GROUP BY category
+ORDER BY avg_discount DESC
+limit 5;
+```
 
 
 
