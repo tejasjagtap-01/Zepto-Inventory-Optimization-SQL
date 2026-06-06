@@ -84,10 +84,24 @@ ORDER By mrp DESC;
 
 
 --------- Q3. Estimated Revenue per Category: Calculated forecasted revenue metrics across different product categories to determine which segments drive the most financial value.
+```sql
+SELECT category,
+SUM(discountedSellingPrice * availableQuantity) AS total_revenue 
+FROM zepto
+GROUP BY category 
+ORDER BY total_revenue;
+```
 
 
 
 --------- Q8. Logistics \& Storage Load: Calculated the total cumulative inventory weight per category to help warehouse operations optimize physical shelf-space allocation.
+```sql
+SELECT category,
+SUM(weightInGms * availableQuantity) AS total_weight
+FROM zepto
+GROUP BY category 
+ORDER BY total_weight;
+```
 
 
 
