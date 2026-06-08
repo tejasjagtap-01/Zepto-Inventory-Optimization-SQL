@@ -34,11 +34,38 @@ The goal of this analysis is to transform raw inventory data into strategic deci
 
 
 
+## 📊DATA EXPLOARATION (EDA)
+```sql
+--Data Exploration
+SELECT COUNT (*) FROM zepto;
+
+--Sample Data
+SELECT * FROM zepto 
+limit 15;
+
+--Null Values
+SELECT * FROM zepto 
+WHERE name IS NULL
+OR
+category IS NULL
+OR
+mrp IS NULL
+OR
+discountpercent IS NULL
+OR
+availablequantity IS NULL
+OR
+discountedsellingprice IS NULL
+OR
+weightingms IS NULL
+OR
+outofstock IS NULL
+OR
+quantity IS NULL;
+```
 
 
-
-
-📊 Business Questions Addressed
+## 📊 Business Questions Addressed
 
 
 
