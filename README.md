@@ -35,9 +35,9 @@ The goal of this analysis is to transform raw inventory data into strategic deci
 
 
 ## 📊DATA EXPLOARATION (EDA)
+**Data Exploration**
+Null Values
 ```sql
---Data Exploration
-SELECT COUNT (*) FROM zepto;
 
 --Sample Data
 SELECT * FROM zepto 
@@ -63,6 +63,28 @@ outofstock IS NULL
 OR
 quantity IS NULL;
 ```
+
+**Different Product Categories**
+```sql
+SELECT DISTINCT category
+FROM zepto
+ORDER BY category;
+```
+
+**Product In_Stock vs Out_Of_Stock**
+```SELECT outOfStock , count(sku_id)
+FROM zepto
+GROUP BY outOfStock;
+
+
+--Prodcut names present multiple times
+SELECT name,count(sku_id) as "Number of SKUs"
+FROM zepto
+GROUP BY name 
+Having count (sku_id) > 1
+order by count(sku_id) DESC;
+```
+
 
 
 ## 📊 Business Questions Addressed
@@ -161,7 +183,7 @@ FROM zepto;
 
 
 
-📈 Key Business Takeaways
+## 📈 Key Business Takeaways
 
 Stockout Minimization: Prioritizing restocking schedules for the high-MRP items identified in the out-of-stock audit will directly recover trapped revenue.
 
@@ -179,7 +201,7 @@ Margin Guardrails: Segmenting items into Low, Medium, and Bulk tiers allows mark
 
 
 
-🚀 How to Use This Repository
+## 🚀 How to Use This Repository
 
 1\. `zepto\_inventory\_analysis.sql`: Contains the full database queries corresponding to questions 1 through 8.
 
