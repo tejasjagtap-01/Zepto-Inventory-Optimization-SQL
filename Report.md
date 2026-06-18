@@ -11,3 +11,5 @@ You can view the full project description, my data cleaning process, and the key
 
 * <img width="1296" height="727" alt="Screenshot 2026-06-18 154025" src="https://github.com/user-attachments/assets/a4b8b3c4-70a8-41e6-be27-f120657a3ba5" />
 
+* <img width="1295" height="732" alt="Screenshot 2026-06-18 154502" src="https://github.com/user-attachments/assets/ea5aa4a3-ae11-4506-a1cf-30c3355b23ff" />
+
