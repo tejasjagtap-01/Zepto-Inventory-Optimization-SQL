@@ -1,4 +1,4 @@
-Zepto Inventory Optimization \& Analytics (SQL)
+# Zepto Inventory Optimization \& Analytics (SQL) & Power BI
 
 
 
@@ -197,11 +197,18 @@ Data-Driven Storage Allocation: Heavy-weight categories identified in the total 
 
 Margin Guardrails: Segmenting items into Low, Medium, and Bulk tiers allows marketing teams to apply aggressive discounts on high-volume products while protecting margins on high-value niche items.
 
+---
+
+# Zepto Report Overview
+
+* <img width="1292" height="728" alt="Screenshot 2026-06-18 154007" src="https://github.com/user-attachments/assets/ea984a03-c631-46ac-b9a6-dea6b7470b79" />
+
+* <img width="1296" height="727" alt="Screenshot 2026-06-18 154025" src="https://github.com/user-attachments/assets/1e088af8-7662-44b4-a883-1c91bc955a73" />
+
+* <img width="1290" height="728" alt="Screenshot 2026-06-18 154115" src="https://github.com/user-attachments/assets/e582b5b6-d387-4c00-8cbf-4055b071af2f" />
 
 
-
-
-
+---
 
 ## 🚀 How to Use This Repository
 
