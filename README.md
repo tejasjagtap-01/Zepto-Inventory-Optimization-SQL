@@ -72,12 +72,14 @@ ORDER BY category;
 ```
 
 **Product In_Stock vs Out_Of_Stock**
-```SELECT outOfStock , count(sku_id)
+```sql
+SELECT outOfStock , count(sku_id)
 FROM zepto
 GROUP BY outOfStock;
+```
 
-
---Prodcut names present multiple times
+**Prodcut names present multiple times**
+```sql
 SELECT name,count(sku_id) as "Number of SKUs"
 FROM zepto
 GROUP BY name 
