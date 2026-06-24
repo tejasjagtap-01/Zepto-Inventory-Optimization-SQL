@@ -1,3 +1,6 @@
+<img width="1288" height="726" alt="zepto (1) compresss" src="https://github.com/user-attachments/assets/576dfc8a-e2ee-4444-8f9a-9abc1385d43c" />
+
+
 # Zepto Inventory Optimization \& Analytics (SQL) & Power BI
 
 
